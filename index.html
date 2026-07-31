@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Rebuild | Strengthening Marriages & Families Through Faith</title>
+    <meta name="description" content="Family Rebuild is a faith-based organization offering biblical marital advice, family support, books, online teachings, and music. Led by Rev. Peter & Dr. Jane Wangaruro.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e3a5f;
+            --primary-dark: #152a45;
+            --secondary: #c9a227;
+            --secondary-light: #e8d5a3;
+            --accent: #f8f9fa;
+            --text: #2d3748;
+            --text-light: #718096;
+            --white: #ffffff;
+            --success: #28a745;
+            --shadow: 0 10px 40px rgba(30, 58, 95, 0.12);
+            --shadow-hover: 0 20px 60px rgba(30, 58, 95, 0.18);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+            background: var(--white);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-primary {
+            background: var(--secondary);
+            color: var(--primary-dark);
+        }
+
+        .btn-primary:hover {
+            background: #b8941f;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(201, 162, 39, 0.35);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary);
+        }
+
+        .btn-dark {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-dark:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: var(--white);
+        }
+
+        .btn-whatsapp:hover {
+            background: #1da851;
+            transform: translateY(-2px);
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 16px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 24px auto 0;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 18px 0;
+            transition: all 0.4s ease;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            padding: 12px 0;
+        }
+
+        .navbar.scrolled .nav-logo,
+        .navbar.scrolled .nav-links a {
+            color: var(--primary);
+        }
+
+        .navbar.scrolled .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-logo i {
+            color: var(--secondary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 36px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            font-weight: 500;
+            font-size: 0.95rem;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .navbar.scrolled .mobile-menu-btn {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, #2c5282 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.6;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: var(--white);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding-top: 100px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(201, 162, 39, 0.15);
+            border: 1px solid rgba(201, 162, 39, 0.3);
+            color: var(--secondary-light);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 28px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: var(--white);
+            margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .hero h1 span {
+            color: var(--secondary);
+            position: relative;
+        }
+
+        .hero-slogan {
+            font-size: 1.5rem;
+            color: var(--secondary-light);
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            margin-bottom: 24px;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 40px;
+            max-width: 600px;
+            line-height: 1.8;
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.8s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 48px;
+            margin-top: 60px;
+            animation: fadeInUp 0.8s ease 1s both;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat .number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--secondary);
+        }
+
+        .hero-stat .label {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+
+        .hero-decoration {
+            position: absolute;
+            right: -5%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(201,162,39,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--white);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image-main {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .about-image-main img {
+            width: 100%;
+            display: block;
+        }
+
+        .about-image-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: var(--primary);
+            color: var(--white);
+            padding: 24px 32px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .about-image-badge .years {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--secondary);
+        }
+
+        .about-image-badge .text {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .about-content h3 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        .vision-mission {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .vm-card {
+            background: var(--accent);
+            padding: 28px;
+            border-radius: 16px;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .vm-card h4 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .vm-card h4 i {
+            color: var(--secondary);
+        }
+
+        .vm-card p {
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* Services Section */
+        .services {
+            background: linear-gradient(180deg, var(--accent) 0%, var(--white) 100%);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 28px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 40px 32px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary) 0%, #2c5282 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 1.6rem;
+            color: var(--secondary);
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Books Section */
+        .books {
+            background: var(--white);
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 32px;
+        }
+
+        .book-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .book-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .book-cover {
+            position: relative;
+            height: 360px;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+        }
+
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .book-card:hover .book-cover img {
+            transform: scale(1.05);
+        }
+
+        .book-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: var(--secondary);
+            color: var(--primary-dark);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .book-info {
+            padding: 28px;
+        }
+
+        .book-info h3 {
+            font-size: 1.25rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .book-author {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+
+        .book-price {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--secondary);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .book-info .btn {
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* Teaching Section */
+        .teaching {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .teaching::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .teaching .section-header h2,
+        .teaching .section-header p {
+            color: var(--white);
+        }
+
+        .teaching .section-header h2::after {
+            background: var(--secondary);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 28px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .video-card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.4s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.12);
+        }
+
+        .video-placeholder {
+            height: 200px;
+            background: linear-gradient(135deg, rgba(201,162,39,0.2) 0%, rgba(30,58,95,0.4) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .video-placeholder i {
+            font-size: 3rem;
+            color: var(--secondary);
+            opacity: 0.8;
+        }
+
+        .video-info {
+            padding: 24px;
+        }
+
+        .video-info h3 {
+            color: var(--white);
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .video-info p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Verse of the Day */
+        .verse-day {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8f4f8 100%);
+            text-align: center;
+        }
+
+        .verse-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 60px 48px;
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .verse-container::before {
+            content: '"';
+            font-family: 'Playfair Display', serif;
+            font-size: 8rem;
+            color: var(--secondary);
+            opacity: 0.2;
+            position: absolute;
+            top: -10px;
+            left: 30px;
+            line-height: 1;
+        }
+
+        .verse-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: var(--primary);
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .verse-ref {
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .verse-date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 16px;
+        }
+
+        /* Testimonies */
+        .testimonies {
+            background: var(--white);
+        }
+
+        .testimonies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+        }
+
+        .testimony-card {
+            background: var(--accent);
+            padding: 40px;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .testimony-card::before {
+            content: '"';
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            color: var(--secondary);
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            left: 24px;
+            line-height: 1;
+        }
+
+        .testimony-text {
+            font-style: italic;
+            color: var(--text);
+            margin-bottom: 24px;
+            line-height: 1.8;
+            padding-top: 20px;
+        }
+
+        .testimony-author {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .testimony-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .testimony-name {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .testimony-role {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* FAQ Section */
+        .faq {
+            background: linear-gradient(180deg, var(--accent) 0%, var(--white) 100%);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: 16px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+
+        .faq-question {
+            padding: 24px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(201, 162, 39, 0.05);
+        }
+
+        .faq-question i {
+            color: var(--secondary);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 28px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            color: var(--text-light);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 28px 24px;
+            max-height: 300px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            position: relative;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .contact .section-header h2,
+        .contact .section-header p {
+            color: var(--white);
+        }
+
+        .contact .section-header h2::after {
+            background: var(--secondary);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-info h3 {
+            color: var(--white);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info > p {
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 32px;
+            line-height: 1.8;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .contact-detail i {
+            width: 48px;
+            height: 48px;
+            background: rgba(201, 162, 39, 0.15);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .contact-detail h4 {
+            color: var(--white);
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+
+        .contact-detail p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+        }
+
+        .contact-form-wrapper {
+            background: var(--white);
+            padding: 48px;
+            border-radius: 24px;
+            box-shadow: var(--shadow-hover);
+        }
+
+        .contact-form-wrapper h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .contact-form-wrapper > p {
+            color: var(--text-light);
+            margin-bottom: 28px;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .form-group label span {
+            color: #e53e3e;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: var(--text);
+            transition: all 0.3s ease;
+            background: var(--white);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 4px rgba(201, 162, 39, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 16px;
+            font-size: 1rem;
+            margin-top: 8px;
+        }
+
+        .form-note {
+            text-align: center;
+            margin-top: 16px;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand h3 {
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-brand h3 i {
+            color: var(--secondary);
+        }
+
+        .footer-brand p {
+            color: rgba(255,255,255,0.7);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-links a {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--secondary);
+            color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        .footer-column h4 {
+            color: var(--white);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-column ul li a {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .footer-column ul li a:hover {
+            color: var(--secondary);
+            padding-left: 4px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 24px;
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+        }
+
+        .whatsapp-float a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: var(--white);
+            padding: 14px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-float i {
+            font-size: 1.3rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6); }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Scroll to top */
+        .scroll-top {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 998;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            background: var(--secondary);
+            color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 992px) {
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero-decoration {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 20px;
+                gap: 16px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                color: var(--primary);
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+
+            .hero-slogan {
+                font-size: 1.2rem;
+            }
+
+            .hero-stats {
+                gap: 24px;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .vision-mission {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form-wrapper {
+                padding: 32px 24px;
+            }
+
+            .whatsapp-float a span {
+                display: none;
+            }
+
+            .whatsapp-float a {
+                padding: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i class="fas fa-home-heart"></i>
+                Family Rebuild
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#teaching">Teachings</a></li>
+                <li><a href="#testimonies">Testimonies</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-decoration"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-cross"></i>
+                    Faith-Based Family Ministry
+                </div>
+                <h1>Rebuilding Families, <span>Restoring Hope</span></h1>
+                <p class="hero-slogan">"Every challenge plus God equals to change"</p>
+                <p>Family Rebuild is a faith-based organization dedicated to offering solid marital and family support through biblical teachings, testimonies, and practical guidance. Led by Rev. Peter & Dr. Jane Wangaruro.</p>
+                <div class="hero-buttons">
+                    <a href="#books" class="btn btn-primary">
+                        <i class="fas fa-book-open"></i>
+                        Explore Our Books
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-calendar-check"></i>
+                        Book a Session
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="number">10+</div>
+                        <div class="label">Years of Ministry</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number">4</div>
+                        <div class="label">Published Books</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number">100+</div>
+                        <div class="label">Families Helped</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number">50+</div>
+                        <div class="label">Churches Reached</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-image-main">
+                        <img src="images/seven-pillars-marriage.jpg" alt="Rev. Peter and Dr. Jane Wangaruro - Family Rebuild Ministry">
+                    </div>
+                    <div class="about-image-badge">
+                        <div class="years">10+</div>
+                        <div class="text">Years of Impact</div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Building Stronger Families Through Faith</h3>
+                    <p>Family Rebuild is a Faith-based organisation that exists to offer solid marital and family support. We offer biblical advice and use testimonies of those who have run the race and kept the faith despite the tough marriage and family terrain.</p>
+                    <p>We have used this platform to reach many churches, schools and stratified groups with all-time rich marital teachings and family edification. Our main office is in Kiambu County, but we serve wider constituencies within Kenya and beyond.</p>
+                    <div class="vision-mission">
+                        <div class="vm-card">
+                            <h4><i class="fas fa-eye"></i> Vision</h4>
+                            <p>To become the desired fountain for marriage and family hope.</p>
+                        </div>
+                        <div class="vm-card">
+                            <h4><i class="fas fa-bullseye"></i> Mission</h4>
+                            <p>Strengthening the family foundation and structure through teaching and practicing lasting and tested truths.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Services</h2>
+                <p>Comprehensive faith-based resources and support to strengthen your marriage and family</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Upcoming Events</h3>
+                    <p>Join our seminars, workshops, and conferences focused on marriage enrichment and family building across Kenya.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Books & Resources</h3>
+                    <p>Access our collection of life-transforming books on marriage, parenting, and overcoming life challenges.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Online Teaching</h3>
+                    <p>Watch and learn from our growing library of online teachings available anytime, anywhere.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-bible"></i>
+                    </div>
+                    <h3>Verse of the Day</h3>
+                    <p>Receive daily scripture inspiration to guide and strengthen your family walk with God.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Music & Worship</h3>
+                    <p>Enjoy uplifting vernacular and Swahili gospel music that edifies the soul and glorifies God.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Blog & Weekly Highlights</h3>
+                    <p>Read our weekly insights on marriage, parenting, and family life from a biblical perspective.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Testimonies</h3>
+                    <p>Be inspired by real stories of transformed marriages and restored families through God's grace.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>FAQ & Counseling</h3>
+                    <p>Get answers to common family and marriage questions, and access biblical counseling support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section class="books section-padding" id="books">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Books</h2>
+                <p>Transformative reads that will strengthen your marriage, guide your parenting, and inspire your faith journey</p>
+            </div>
+            <div class="books-grid">
+                <div class="book-card fade-in">
+                    <div class="book-cover">
+                        <img src="images/seven-pillars-marriage.jpg" alt="Seven Pillars of a Successful Marriage">
+                        <span class="book-badge">Bestseller</span>
+                    </div>
+                    <div class="book-info">
+                        <h3>Seven Pillars of a Successful Marriage</h3>
+                        <p class="book-author">By Peter Wangaruro & Dr. Jane Wangaruro</p>
+                        <div class="book-price">KSh 1,500</div>
+                        <a href="#contact" class="btn btn-dark">
+                            <i class="fas fa-shopping-cart"></i>
+                            Order Now
+                        </a>
+                    </div>
+                </div>
+                <div class="book-card fade-in">
+                    <div class="book-cover">
+                        <img src="images/responsible-parenting.jpg" alt="Responsible Parenting">
+                    </div>
+                    <div class="book-info">
+                        <h3>Responsible Parenting</h3>
+                        <p class="book-author">By Rev. Peter Wangaruro & Dr. Jane Wangaruro</p>
+                        <div class="book-price">KSh 1,200</div>
+                        <a href="#contact" class="btn btn-dark">
+                            <i class="fas fa-shopping-cart"></i>
+                            Order Now
+                        </a>
+                    </div>
+                </div>
+                <div class="book-card fade-in">
+                    <div class="book-cover">
+                        <img src="images/parents-on-a-mission.jpg" alt="Parents on a Mission">
+                    </div>
+                    <div class="book-info">
+                        <h3>Parents on a Mission</h3>
+                        <p class="book-author">By Peter & Dr. Jane Wangaruro</p>
+                        <div class="book-price">KSh 1,200</div>
+                        <a href="#contact" class="btn btn-dark">
+                            <i class="fas fa-shopping-cart"></i>
+                            Order Now
+                        </a>
+                    </div>
+                </div>
+                <div class="book-card fade-in">
+                    <div class="book-cover">
+                        <img src="images/overcoming-obstacles.jpg" alt="Overcoming Youthful Obstacles">
+                    </div>
+                    <div class="book-info">
+                        <h3>Overcoming Youthful Obstacles</h3>
+                        <p class="book-author">By Rev. Peter Wangaruro</p>
+                        <div class="book-price">KSh 1,000</div>
+                        <a href="#contact" class="btn btn-dark">
+                            <i class="fas fa-shopping-cart"></i>
+                            Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Section -->
+    <section class="teaching section-padding" id="teaching">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Online Teachings</h2>
+                <p>Watch our latest sermons, teachings, and worship sessions on YouTube. Subscribe to stay updated with new content.</p>
+            </div>
+            <div class="video-grid">
+                <div class="video-card fade-in">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Understanding God's Design for Marriage</h3>
+                        <p>A foundational teaching on biblical marriage principles that transform relationships.</p>
+                    </div>
+                </div>
+                <div class="video-card fade-in">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Raising Godly Children in a Digital Age</h3>
+                        <p>Practical parenting strategies for protecting and guiding children today.</p>
+                    </div>
+                </div>
+                <div class="video-card fade-in">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Worship in Vernacular & Swahili</h3>
+                        <p>Uplifting praise and worship sessions that connect hearts to God.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 48px; position: relative; z-index: 2;">
+                <a href="https://youtube.com" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-youtube"></i>
+                    Visit Our YouTube Channel
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verse of the Day -->
+    <section class="verse-day section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Verse of the Day</h2>
+                <p>Let God's Word guide your family today</p>
+            </div>
+            <div class="verse-container fade-in">
+                <p class="verse-text" id="verseText">"Therefore what God has joined together, let no one separate."</p>
+                <p class="verse-ref" id="verseRef">— Mark 10:9</p>
+                <p class="verse-date" id="verseDate">Today</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonies Section -->
+    <section class="testimonies section-padding" id="testimonies">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Testimonies</h2>
+                <p>Real stories of transformed marriages and restored families through God's grace</p>
+            </div>
+            <div class="testimonies-grid">
+                <div class="testimony-card fade-in">
+                    <p class="testimony-text">After 15 years of constant conflict and near divorce, Family Rebuild's counseling and the book "Seven Pillars of a Successful Marriage" completely transformed our relationship. We now enjoy a peaceful, loving home. God is faithful!</p>
+                    <div class="testimony-author">
+                        <div class="testimony-avatar">JM</div>
+                        <div>
+                            <div class="testimony-name">John & Mary K.</div>
+                            <div class="testimony-role">Nairobi, Kenya</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimony-card fade-in">
+                    <p class="testimony-text">As a single mother struggling to raise teenagers, "Responsible Parenting" gave me practical wisdom I desperately needed. My children are now doing better in school and our home is filled with peace. Thank you Rev. Wangaruro!</p>
+                    <div class="testimony-author">
+                        <div class="testimony-avatar">AN</div>
+                        <div>
+                            <div class="testimony-name">Anne Njoroge</div>
+                            <div class="testimony-role">Kiambu County</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimony-card fade-in">
+                    <p class="testimony-text">Our youth group was falling apart due to peer pressure and early relationships. "Overcoming Youthful Obstacles" became our guidebook. We've seen 20+ young people rededicate their lives to Christ. This ministry is a blessing!</p>
+                    <div class="testimony-author">
+                        <div class="testimony-avatar">PK</div>
+                        <div>
+                            <div class="testimony-name">Pastor Kevin O.</div>
+                            <div class="testimony-role">Youth Pastor, Nakuru</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section-padding" id="faq">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our ministry, books, and services</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>How can I order a book from Family Rebuild?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can order any of our books by filling out the contact form on this website, sending us a WhatsApp message, or emailing us at familyrebuild2026@gmail.com. We offer both hard copies and soft copies (e-books). Delivery is available across Kenya.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer marriage counseling services?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer biblical marriage counseling for couples at all stages of their relationship. Whether you are preparing for marriage, experiencing challenges, or simply want to strengthen your bond, our counseling sessions are grounded in Scripture and practical wisdom. Contact us to schedule a session.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can you come and speak at our church or event?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Rev. Peter and Dr. Jane Wangaruro are available for speaking engagements at churches, schools, conferences, and community events. We have reached many churches and stratified groups across Kenya with rich marital teachings and family edification. Reach out to discuss your event.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are your books available in digital format?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, soft copies (e-books/PDF) are available for most of our titles. This is perfect for international readers or those who prefer digital reading. When ordering, simply indicate your preference for a digital copy in the order form.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How can I support the Family Rebuild ministry?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can support us by purchasing our books, sharing our content with friends and family, inviting us to speak at your events, subscribing to our YouTube channel, and praying for the ministry. Your support helps us reach more families with the message of hope and restoration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Get In Touch</h2>
+                <p>Order a book, book a counseling session, or invite us to your event. We'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3>Let's Rebuild Together</h3>
+                    <p>Whether you want to order a book, schedule a counseling session, invite us to speak at your church, or simply have a question — we are here for you. Every family deserves hope and restoration.</p>
+
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Kiambu County, Kenya<br>Serving Kenya and Beyond</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>familyrebuild2026@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+254 700 249 344</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+254 700 249 344</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper fade-in">
+                    <h3><i class="fas fa-shopping-cart" style="color: var(--secondary); margin-right: 8px;"></i>Order a Book / Contact Us</h3>
+                    <p>Fill out the form below and we will get back to you within 24 hours.</p>
+
+                    <form name="book-order" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success.html">
+                        <input type="hidden" name="form-name" value="book-order">
+                        <p style="display: none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                        </p>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name <span>*</span></label>
+                                <input type="text" name="first_name" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name <span>*</span></label>
+                                <input type="text" name="last_name" placeholder="Doe" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email Address <span>*</span></label>
+                                <input type="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number <span>*</span></label>
+                                <input type="tel" name="phone" placeholder="+254 7XX XXX XXX" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>What would you like to do? <span>*</span></label>
+                            <select name="inquiry_type" required>
+                                <option value="">Select an option</option>
+                                <option value="order-book">Order a Book</option>
+                                <option value="marriage-counseling">Marriage Counseling</option>
+                                <option value="speaking-invite">Invite Us to Speak</option>
+                                <option value="general-inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Select Book (if ordering)</label>
+                            <select name="book_selection">
+                                <option value="">Select a book</option>
+                                <option value="seven-pillars">Seven Pillars of a Successful Marriage — KSh 1,500</option>
+                                <option value="responsible-parenting">Responsible Parenting — KSh 1,200</option>
+                                <option value="parents-mission">Parents on a Mission — KSh 1,200</option>
+                                <option value="overcoming-obstacles">Overcoming Youthful Obstacles — KSh 1,000</option>
+                                <option value="all-books">All Four Books — KSh 4,500 (Bundle)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Format Preference</label>
+                            <select name="format">
+                                <option value="hardcopy">Hard Copy (Physical Book)</option>
+                                <option value="softcopy">Soft Copy (Digital/PDF)</option>
+                                <option value="both">Both Hard & Soft Copy</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Delivery Location / Additional Details</label>
+                            <textarea name="message" placeholder="Please provide your delivery address (if in Kenya), or any specific questions or requests..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                        <p class="form-note"><i class="fas fa-lock" style="margin-right: 4px;"></i>Your information is secure. We typically respond within 24 hours.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-home-heart"></i> Family Rebuild</h3>
+                    <p>A faith-based organization dedicated to strengthening marriages and families through biblical teaching, testimonies, and practical guidance. Every challenge plus God equals to change.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/254700249344" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#books">Books</a></li>
+                        <li><a href="#teaching">Teachings</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#books">Book Store</a></li>
+                        <li><a href="#teaching">Online Teachings</a></li>
+                        <li><a href="#testimonies">Testimonies</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:familyrebuild2026@gmail.com">familyrebuild2026@gmail.com</a></li>
+                        <li><a href="https://wa.me/254700249344">+254 700 249 344</a></li>
+                        <li><a href="#">Kiambu County, Kenya</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p> Family Rebuild Ministry. All rights reserved. | Designed with faith and purpose.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/254700249344" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+            <span>Chat with Us</span>
+        </a>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Scroll to top button
+        const scrollTop = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+        scrollTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Fade in animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(el => observer.observe(el));
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                });
+
+                // Open clicked if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Daily Verse Rotation
+        const verses = [
+            { text: "Therefore what God has joined together, let no one separate.", ref: "Mark 10:9" },
+            { text: "Husbands, love your wives, just as Christ loved the church and gave himself up for her.", ref: "Ephesians 5:25" },
+            { text: "Train up a child in the way he should go; even when he is old he will not depart from it.", ref: "Proverbs 22:6" },
+            { text: "Above all, love each other deeply, because love covers over a multitude of sins.", ref: "1 Peter 4:8" },
+            { text: "Be completely humble and gentle; be patient, bearing with one another in love.", ref: "Ephesians 4:2" },
+            { text: "Children are a heritage from the Lord, offspring a reward from him.", ref: "Psalm 127:3" },
+            { text: "Though one may be overpowered, two can defend themselves. A cord of three strands is not quickly broken.", ref: "Ecclesiastes 4:12" }
+        ];
+
+        const today = new Date().getDay();
+        const verse = verses[today % verses.length];
+        document.getElementById('verseText').textContent = '"' + verse.text + '"';
+        document.getElementById('verseRef').textContent = '— ' + verse.ref;
+        document.getElementById('verseDate').textContent = new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    </script>
+</body>
+</html>
